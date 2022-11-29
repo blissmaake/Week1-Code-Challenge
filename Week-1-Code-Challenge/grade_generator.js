@@ -1,3 +1,4 @@
+// call readline
 const readline = require('readline');
 const input = readline.createInterface(
     {
@@ -5,11 +6,12 @@ const input = readline.createInterface(
         output: process.stdout
     }
 );
+// Requesting Marks from the users
 input.question("Enter students marks: ", function (mark){ 
     let marks = parseInt(mark, 10);
 
  // Checking the condition for the providing the 
-// grade to student.
+  // grade to student based on percentage
     if (isNaN(marks) || marks > 100){
         process.stdout.write("Please Enter a valid number\n");
         process.exit(1)

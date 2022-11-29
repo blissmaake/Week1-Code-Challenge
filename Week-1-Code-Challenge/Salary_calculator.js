@@ -1,3 +1,4 @@
+// Call Readline
 const readline = require('readline');
 const input = readline.createInterface(
     {
@@ -5,15 +6,17 @@ const input = readline.createInterface(
         output: process.stdout
     }
 );
-
+// Prompts The User To Input Gross Salary.
 input.question("What is your Gross Salary?\n", function (gross_pay){
-    // console.log(`your gross salry is: ${gross_pay}`);
+    // Declaring The Variables
     let paye;
     let extra_taxable_pay;
     let nhif;
     let nssf= 200;
     let total_deductions;
     let net_salary;
+
+    // Conditional Statements To Calculate Part Of The Deductions.
     if (gross_pay < 24001){
         paye = gross_pay * 0.1;
     }else if (gross_pay < 32334){
@@ -47,7 +50,7 @@ input.question("What is your Gross Salary?\n", function (gross_pay){
     } else {
         nhif = 950
     }
-
+// Calculating & Outputting the calculations in String format.
     total_deductions = nhif + paye + nssf;
     net_salary = gross_pay - total_deductions;
     process.stdout.write(`Your gross pay is Ksh: ${gross_pay}\n`);
