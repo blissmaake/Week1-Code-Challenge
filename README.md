@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 20faf0a (Done Assignment)
 # Student Grade Generator (Toy Problem)
 
 * Write a program that prompts the user to input student marks.
@@ -52,10 +48,6 @@ Bliss Maake
 # License
 Bliss © 2022.
 
-
-<<<<<<< HEAD
-=======
-=======
 # Student Grade Generator (Toy Problem)
 
 * Write a program that prompts the user to input student marks.
@@ -105,7 +97,3 @@ Bliss Maake
 
 # License
 Bliss © 2022.
-
-
->>>>>>> 6801bd1 (Done Assignment)
->>>>>>> 20faf0a (Done Assignment)
