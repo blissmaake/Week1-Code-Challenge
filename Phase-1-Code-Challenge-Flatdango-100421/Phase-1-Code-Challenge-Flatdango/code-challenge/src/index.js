@@ -1,4 +1,3 @@
-// Your code here
 let allFilmsList = [];
 
 (async () => {
